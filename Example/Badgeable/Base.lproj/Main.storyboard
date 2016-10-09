@@ -6,7 +6,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Badgeable Demo-->
         <scene sceneID="9N0-0b-lOa">
             <objects>
                 <tableViewController id="c7l-jc-9lT" customClass="DemoTableViewController" customModule="Badgeable_Example" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                             <outlet property="delegate" destination="c7l-jc-9lT" id="Z9Q-5D-JWx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Ea1-a7-7kw"/>
+                    <navigationItem key="navigationItem" title="Badgeable Demo" id="Ea1-a7-7kw"/>
                     <connections>
                         <outlet property="button" destination="Ocb-j2-nQi" id="wmk-7h-tSo"/>
                         <outlet property="label" destination="8nh-Zh-5Jy" id="cnq-hx-2oS"/>
