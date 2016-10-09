@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2804F772672B8B5EF4BBFC7E6857D5AF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F02EF4EDA64A52B8397896FD83E10B9 /* ReplaceMe.swift */; };
 		5807AA169E526286078CA945F1FE37AF /* Pods-Badgeable_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B559AA0350953B063D8369F0888A2F84 /* Pods-Badgeable_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		595304B39DD109000B5B23C7B2B09DE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		5CE54A18D8C69A4C74AE5A794E310BA3 /* Badgeable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F71EA61B534976777059D9197D9541 /* Badgeable-dummy.m */; };
 		789EE91343E2643D10B22D3F9EE9C10C /* Pods-Badgeable_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DCBA29F96C8BBEFCDAF64DF9F18E188 /* Pods-Badgeable_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9350764EED449E167E1403E86011660C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		A9EF51449DA691949F7668C67130CB45 /* Pods-Badgeable_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F26CDC6CA1C8E7FA61B183039B36D723 /* Pods-Badgeable_Example-dummy.m */; };
 		C07A6FE081E26516FD182242977E89D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C16B8449B8A5E76C77CB0638D85180D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		C8121D3FD3C8B5DC79137271691EFEA6 /* Pods-Badgeable_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 946A0B45A3AD1332DE0755149BC69024 /* Pods-Badgeable_Tests-dummy.m */; };
-		CE09BAAFA32C636EFEF990E584B7C93F /* Badgeable-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F71EA61B534976777059D9197D9541 /* Badgeable-dummy.m */; };
-		F2D063CC4DDA514C92AEC5CCAAE15149 /* Badgeable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 137E02F9AC272AB43522D0C042DD244C /* Badgeable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F42FB5F13386F0D1A0A87097C948CED0 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A435D5F0FCB4E6B9E6DAB63AB574092 /* ReplaceMe.swift */; };
+		EB62B0798F2B1310252B39359E6036EE /* Badgeable-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 137E02F9AC272AB43522D0C042DD244C /* Badgeable-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE007058AD2EF694631129C014F2BC0B /* Badgeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2432CA54575C8C55F98B91AC79FC4C08 /* Badgeable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3A7D939A8EA490B40EE80FB016ED3702;
+			remoteGlobalIDString = 61A6B840209E454F454516838ACBE97E;
 			remoteInfo = Badgeable;
 		};
 /* End PBXContainerItemProxy section */
@@ -34,11 +35,12 @@
 		137E02F9AC272AB43522D0C042DD244C /* Badgeable-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Badgeable-umbrella.h"; sourceTree = "<group>"; };
 		14397D1746B7C0F07415C8910BC427F9 /* Pods-Badgeable_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Badgeable_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1AC96D0386956E2D51CE088E94613D61 /* Pods-Badgeable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Badgeable_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F02EF4EDA64A52B8397896FD83E10B9 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		20560B0DDC4B25434A23BB8D330FFBA1 /* Pods-Badgeable_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Badgeable_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2432CA54575C8C55F98B91AC79FC4C08 /* Badgeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Badgeable.swift; sourceTree = "<group>"; };
 		3BD1182B37DF68ACDDF5167098B7432C /* Pods-Badgeable_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Badgeable_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		3D66F522AD7BB2EC45CDDDD54B507957 /* Pods-Badgeable_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Badgeable_Example.modulemap"; sourceTree = "<group>"; };
 		41B651C1276BF076FF5978CF95AB0CD7 /* Badgeable-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Badgeable-prefix.pch"; sourceTree = "<group>"; };
-		6A435D5F0FCB4E6B9E6DAB63AB574092 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		744C0BE09C4C5A92784DA8006388D9B2 /* Pods-Badgeable_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Badgeable_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7AC15388A88D3A724480B475B5B4861C /* Pods-Badgeable_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Badgeable_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8529E4F598829FDB864AD026BDED0F31 /* Badgeable.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Badgeable.xcconfig; sourceTree = "<group>"; };
@@ -81,11 +83,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F7824D5E125D0D515CDB4A223FDF6AA4 /* Frameworks */ = {
+		C3A099D2DAACC5E8DE55C6C62AECEF65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9350764EED449E167E1403E86011660C /* Foundation.framework in Frameworks */,
+				595304B39DD109000B5B23C7B2B09DE7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,20 +117,21 @@
 			path = "Example/Pods/Target Support Files/Badgeable";
 			sourceTree = "<group>";
 		};
+		261546A71239315999ED112C37BAAE72 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2432CA54575C8C55F98B91AC79FC4C08 /* Badgeable.swift */,
+				1F02EF4EDA64A52B8397896FD83E10B9 /* ReplaceMe.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		6FA180AB77AC178D8231495787A42F48 /* Badgeable */ = {
-			isa = PBXGroup;
-			children = (
-				824B506625AE80590E423F10674776FA /* Classes */,
-			);
-			path = Badgeable;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -142,18 +145,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		824B506625AE80590E423F10674776FA /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				6A435D5F0FCB4E6B9E6DAB63AB574092 /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		86195C349379B064033C4043E7CF0CD2 /* Badgeable */ = {
 			isa = PBXGroup;
 			children = (
-				6FA180AB77AC178D8231495787A42F48 /* Badgeable */,
+				B6DFC61CE33A25F7B9F0AD8F2890D7B2 /* Badgeable */,
 				219CDB23BE845CDD2B8137E64DD09D36 /* Support Files */,
 			);
 			name = Badgeable;
@@ -196,6 +191,14 @@
 			path = "Target Support Files/Pods-Badgeable_Tests";
 			sourceTree = "<group>";
 		};
+		B6DFC61CE33A25F7B9F0AD8F2890D7B2 /* Badgeable */ = {
+			isa = PBXGroup;
+			children = (
+				261546A71239315999ED112C37BAAE72 /* Classes */,
+			);
+			path = Badgeable;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,11 +228,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9742D246E50AB6EC2D344C6244925930 /* Headers */ = {
+		C729F2DF35E94D8D54514393B2EDFE71 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2D063CC4DDA514C92AEC5CCAAE15149 /* Badgeable-umbrella.h in Headers */,
+				EB62B0798F2B1310252B39359E6036EE /* Badgeable-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,23 +255,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3A7D939A8EA490B40EE80FB016ED3702 /* Badgeable */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD01E151A917D53FAB2DE364D0D2AC87 /* Build configuration list for PBXNativeTarget "Badgeable" */;
-			buildPhases = (
-				76838438F73E84E9C4CE830E7D31D9CE /* Sources */,
-				F7824D5E125D0D515CDB4A223FDF6AA4 /* Frameworks */,
-				9742D246E50AB6EC2D344C6244925930 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Badgeable;
-			productName = Badgeable;
-			productReference = CBADD13E49E495A584079A2387E83F39 /* Badgeable.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		3C95FFB13A0A96EDC882EF751ACF4AF2 /* Pods-Badgeable_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4820156207373F13DCBC95DD74FB7AF /* Build configuration list for PBXNativeTarget "Pods-Badgeable_Example" */;
@@ -285,6 +271,23 @@
 			name = "Pods-Badgeable_Example";
 			productName = "Pods-Badgeable_Example";
 			productReference = B42360B0F2287EF9E9413C6A90F66BCA /* Pods_Badgeable_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		61A6B840209E454F454516838ACBE97E /* Badgeable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0777EF93D1AAB4FCBD6B063E059763E6 /* Build configuration list for PBXNativeTarget "Badgeable" */;
+			buildPhases = (
+				D00E869478D6F613B9436A190449685C /* Sources */,
+				C3A099D2DAACC5E8DE55C6C62AECEF65 /* Frameworks */,
+				C729F2DF35E94D8D54514393B2EDFE71 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Badgeable;
+			productName = Badgeable;
+			productReference = CBADD13E49E495A584079A2387E83F39 /* Badgeable.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		930CFA0156C912AB1F29ACA89DD52B15 /* Pods-Badgeable_Tests */ = {
@@ -325,7 +328,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A7D939A8EA490B40EE80FB016ED3702 /* Badgeable */,
+				61A6B840209E454F454516838ACBE97E /* Badgeable */,
 				3C95FFB13A0A96EDC882EF751ACF4AF2 /* Pods-Badgeable_Example */,
 				930CFA0156C912AB1F29ACA89DD52B15 /* Pods-Badgeable_Tests */,
 			);
@@ -333,15 +336,6 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76838438F73E84E9C4CE830E7D31D9CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE09BAAFA32C636EFEF990E584B7C93F /* Badgeable-dummy.m in Sources */,
-				F42FB5F13386F0D1A0A87097C948CED0 /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		957DCBBCD07744A9284008F0DDD52CD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,13 +352,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D00E869478D6F613B9436A190449685C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE54A18D8C69A4C74AE5A794E310BA3 /* Badgeable-dummy.m in Sources */,
+				EE007058AD2EF694631129C014F2BC0B /* Badgeable.swift in Sources */,
+				2804F772672B8B5EF4BBFC7E6857D5AF /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		F6D866F6D824BFD1000389E0A234B619 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Badgeable;
-			target = 3A7D939A8EA490B40EE80FB016ED3702 /* Badgeable */;
+			target = 61A6B840209E454F454516838ACBE97E /* Badgeable */;
 			targetProxy = B63FD9A7564F329A54A3535E33E7BA21 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,6 +410,39 @@
 			};
 			name = Debug;
 		};
+		6328D5F521D4A2BBEDECE685469EBF56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8529E4F598829FDB864AD026BDED0F31 /* Badgeable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Badgeable/Badgeable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Badgeable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Badgeable/Badgeable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Badgeable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		8506183478CAB0D33F26BCDD5752A219 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1AC96D0386956E2D51CE088E94613D61 /* Pods-Badgeable_Tests.release.xcconfig */;
@@ -435,6 +472,38 @@
 				PRODUCT_NAME = Pods_Badgeable_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C5DE219B95CF11B538976EDEFE24CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8529E4F598829FDB864AD026BDED0F31 /* Badgeable.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Badgeable/Badgeable-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Badgeable/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Badgeable/Badgeable.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Badgeable;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -560,71 +629,6 @@
 			};
 			name = Release;
 		};
-		C223D6D4D3122F8B1F4EC4E631C74A96 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8529E4F598829FDB864AD026BDED0F31 /* Badgeable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Badgeable/Badgeable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Badgeable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Badgeable/Badgeable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = Badgeable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E261402254471D9BFF77C6130B2734D6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8529E4F598829FDB864AD026BDED0F31 /* Badgeable.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Badgeable/Badgeable-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Badgeable/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Badgeable/Badgeable.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Badgeable;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		EC4FC677A68391E4BB63E9C3A7818D88 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 744C0BE09C4C5A92784DA8006388D9B2 /* Pods-Badgeable_Tests.debug.xcconfig */;
@@ -663,6 +667,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0777EF93D1AAB4FCBD6B063E059763E6 /* Build configuration list for PBXNativeTarget "Badgeable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6328D5F521D4A2BBEDECE685469EBF56 /* Debug */,
+				8C5DE219B95CF11B538976EDEFE24CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		166E590DA684D8FF7492BC4D3762D71A /* Build configuration list for PBXNativeTarget "Pods-Badgeable_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -677,15 +690,6 @@
 			buildConfigurations = (
 				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
 				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AD01E151A917D53FAB2DE364D0D2AC87 /* Build configuration list for PBXNativeTarget "Badgeable" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E261402254471D9BFF77C6130B2734D6 /* Debug */,
-				C223D6D4D3122F8B1F4EC4E631C74A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
