@@ -511,7 +511,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 322C083DC32E80B55B6D3464 /* Pods-Badgeable_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Badgeable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -526,7 +525,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 46E9A8CF40CDDDC89D3E37AF /* Pods-Badgeable_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Badgeable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
