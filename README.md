@@ -22,7 +22,7 @@ pod "Badgeable"
 
 ## Author
 
-Daniel KIM, daniel.kim@optus.com.au
+Daniel KIM, gwangpa@gmail.com
 
 ## License
 
