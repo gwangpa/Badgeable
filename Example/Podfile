@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Badgeable_Example' do
+  pod 'Badgeable', :path => '../'
+
+  target 'Badgeable_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

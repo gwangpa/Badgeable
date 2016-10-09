@@ -1,0 +1,16 @@
+PODS:
+  - Badgeable (0.1.0)
+
+DEPENDENCIES:
+  - Badgeable (from `../`)
+
+EXTERNAL SOURCES:
+  Badgeable:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Badgeable: ebfc2dae3f30fd849d0c37fa9130c98746db904d
+
+PODFILE CHECKSUM: dda64c48e1f0805bab9797b2a6df6032153c3ad8
+
+COCOAPODS: 1.1.0.rc.2

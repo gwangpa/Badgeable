@@ -1,0 +1,6 @@
+framework module Badgeable {
+  umbrella header "Badgeable-umbrella.h"
+
+  export *
+  module * { export * }
+}
