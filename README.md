@@ -1,6 +1,6 @@
 # Badgeable
 
-[![CI Status](http://img.shields.io/travis/Daniel KIM/Badgeable.svg?style=flat)](https://travis-ci.org/Daniel KIM/Badgeable)
+[![CI Status](http://img.shields.io/travis/gwangpa/Badgeable.svg?style=flat)](https://travis-ci.org/gwangpa/Badgeable)
 [![Version](https://img.shields.io/cocoapods/v/Badgeable.svg?style=flat)](http://cocoapods.org/pods/Badgeable)
 [![License](https://img.shields.io/cocoapods/l/Badgeable.svg?style=flat)](http://cocoapods.org/pods/Badgeable)
 [![Platform](https://img.shields.io/cocoapods/p/Badgeable.svg?style=flat)](http://cocoapods.org/pods/Badgeable)
