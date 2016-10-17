@@ -11,10 +11,10 @@ import Badgeable
 
 class DemoTableViewController: UITableViewController {
     
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var `switch`: UISwitch!
+    @IBOutlet weak var label: Label!
+    @IBOutlet weak var button: Button!
+    @IBOutlet weak var textField: TextField!
+    @IBOutlet weak var `switch`: Switch!
     
     override func viewDidLoad() {
         super.viewDidLoad()

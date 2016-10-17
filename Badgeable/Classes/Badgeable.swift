@@ -105,8 +105,3 @@ public extension Badgeable {
     }
     
 }
-
-// MARK: - Default comformance to UIView and UIBarButtonIem
-
-extension UIView: Badgeable {}
-extension UIBarButtonItem: Badgeable {}
