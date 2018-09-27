@@ -6,11 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   Badgeable:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  Badgeable: 1e6544ec99ae5afdc117dc9a49e17230637936c8
+  Badgeable: eb621e4230f90bce7eb81865399c88bccc686c6b
 
 PODFILE CHECKSUM: dda64c48e1f0805bab9797b2a6df6032153c3ad8
 
-COCOAPODS: 1.1.0.rc.3
+COCOAPODS: 1.6.0.beta.1

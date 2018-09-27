@@ -1,3 +1,4 @@
+
 # Badgeable
 
 [![CI Status](http://img.shields.io/travis/gwangpa/Badgeable.svg?style=flat)](https://travis-ci.org/gwangpa/Badgeable)
@@ -81,6 +82,13 @@ class YourViewController: UIViewController {
 }
 ```
 
+You can change the appearance.
+```swift
+button.maxValue = 5 //shows: (5+)
+button.badgeColor = .orange
+button.badgePosition = .bottomRight
+```
+
 You can conform `Badgeable` protocol even UIView by extension.
 
 ```swift
@@ -92,9 +100,10 @@ Then all UI components can display badge by setting `badgeCount` property.
 
 ## TODO
 
-- Configurable badge appearance.
-- Adjustable badge position. For example: TopLeft, TopRight, BottomLeft and BottomRight.
-- Animatable.
+- Configurable badge appearance. 
+	- [X] Badge Color
+- [X] Adjustable badge position. For example: TopLeft, TopRight, BottomLeft and BottomRight.
+- [ ] Animatable.
 
 ## Author
 
