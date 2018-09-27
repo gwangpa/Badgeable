@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Badgeable'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'Everything can display badge.'
   s.description      = <<-DESC
 Badgeable can display badge icon any UIView and UIBarButtonItem.

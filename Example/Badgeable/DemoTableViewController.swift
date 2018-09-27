@@ -24,10 +24,22 @@ class DemoTableViewController: UITableViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        label.badgeCount = 4
-        button.badgeCount = 4
+        //Item 1
+        label.badgeCount = 40
+        label.badgeColor = .orange
+        label.text = ".badgeColor"
+        //Item 2
+        button.badgeCount = 10
+        button.maxValue = 9
+        button.setTitle(".maxValue", for: .normal)
+        button.badgePosition = .topLeft
+        //Item 3
         textField.badgeCount = 4
+        textField.placeholder = ".position"
+        textField.badgePosition = .bottomRight
+        //Item 4
         `switch`.badgeCount = 4
+        `switch`.badgePosition = .bottomLeft
     }
 
 }

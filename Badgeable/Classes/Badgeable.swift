@@ -13,18 +13,30 @@ import ObjectiveC
 import UIKit
 
 private struct BadgableAssociatedKeys {
-    static var badgeCount = "dadgableBadgeCount"
+    static var badgeCount = "badgableBadgeCount"
+    static var maxValue = "badgableBadgeMaxValue"
+    static var badgeColor = "badgableBadgeColor"
+    static var badgePosition = "badgableBadgePosition"
     static var badgeLabel = "badgeLabel"
+}
+
+public enum BadgePosition {
+    case topRight
+    case topLeft
+    case bottomRight
+    case bottomLeft
 }
 
 public protocol Badgeable {
     
     var badgeCount: Int { get set }
+    var badgeColor: UIColor { get set }
+    var maxValue: Int { get set }
+    var badgePosition: BadgePosition { get set }
     
 }
 
 public extension Badgeable {
-    
     /// Badge count. Can display badge by setting this variable.
     var badgeCount: Int {
         get {
@@ -35,6 +47,37 @@ public extension Badgeable {
             presentBadge()
         }
     }
+    /// Max value. If badgeCount(120) is greater than max (99), will show: 99+
+    var maxValue: Int {
+        get {
+            return objc_getAssociatedObject(self, &BadgableAssociatedKeys.maxValue) as? Int ?? badgeCount
+        }
+        set {
+            objc_setAssociatedObject(self, &BadgableAssociatedKeys.maxValue, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            presentBadge()
+        }
+    }
+    /// Badge color. Can change background color - Default is .red
+    var badgeColor: UIColor {
+        get {
+            return objc_getAssociatedObject(self, &BadgableAssociatedKeys.badgeColor) as? UIColor ?? .red
+        }
+        set {
+            objc_setAssociatedObject(self, &BadgableAssociatedKeys.badgeColor, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            presentBadge()
+        }
+    }
+    /// Badge position. TopRight, TopLeft, BottomRight, BottomLeft - Default is .topRight
+    var badgePosition: BadgePosition {
+        get {
+            return objc_getAssociatedObject(self, &BadgableAssociatedKeys.badgePosition) as? BadgePosition ?? .topRight
+        }
+        set {
+            objc_setAssociatedObject(self, &BadgableAssociatedKeys.badgePosition, newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+            presentBadge()
+        }
+    }
+    
     
     /// Computed badgeLabel.
     /// If it's nil it will create one.
@@ -58,7 +101,11 @@ public extension Badgeable {
     /// Badgable will work only if UIBarButtonItem uses customView.
     private mutating func presentBadge() {
         // Configure badge label
-        badgeLabel.text = "\(badgeCount)"
+        if badgeCount > maxValue {
+            badgeLabel.text = "\(maxValue)+"
+        } else {
+            badgeLabel.text = "\(badgeCount)"
+        }
         badgeLabel.sizeToFit()
         var labelFrame = badgeLabel.frame
         labelFrame.size.width += 4
@@ -69,16 +116,17 @@ public extension Badgeable {
         badgeLabel.frame = labelFrame
         badgeLabel.layer.cornerRadius = labelFrame.size.height / 2.0
         badgeLabel.isHidden = badgeCount == 0
+        badgeLabel.backgroundColor = badgeColor
         
         // Add to super view, adjust frame
         if let barButtonItem = self as? UIBarButtonItem {
             if let customView = barButtonItem.customView {
-                badgeLabel.frame = positionedFrame(badgeLabel: badgeLabel, to: customView)
+                badgeLabel.frame = positionedFrame(badgeLabel: badgeLabel, to: customView, position: badgePosition)
                 customView.clipsToBounds = false
                 customView.addSubview(badgeLabel)
             }
         } else if let view = self as? UIView {
-            badgeLabel.frame = positionedFrame(badgeLabel: badgeLabel, to: view)
+            badgeLabel.frame = positionedFrame(badgeLabel: badgeLabel, to: view, position: badgePosition)
             view.clipsToBounds = false
             view.addSubview(badgeLabel)
         }
@@ -86,10 +134,29 @@ public extension Badgeable {
     
     /// Calculate frame badgelabel sit top right side of super view.
     /// Returns calculated CGRect.
-    private func positionedFrame(badgeLabel: UILabel, to superView: UIView) -> CGRect {
+    private func positionedFrame(badgeLabel: UILabel, to superView: UIView, position: BadgePosition) -> CGRect {
         var frame = badgeLabel.frame
-        frame.origin.x = superView.frame.size.width - frame.size.width / 2.0
-        frame.origin.y = -frame.size.height / 2.0
+     
+        let right = superView.frame.size.width - frame.size.width / 2.0
+        let left = -frame.size.width / 2.0
+        let bottom = superView.frame.size.height - frame.size.height / 2.0
+        let top = -frame.size.height / 2.0
+        
+        switch position {
+        case .topRight:
+            frame.origin.x = right
+            frame.origin.y = top
+        case .topLeft:
+            frame.origin.x = left
+            frame.origin.y = top
+        case .bottomRight:
+            frame.origin.x = right
+            frame.origin.y = bottom
+        case .bottomLeft:
+            frame.origin.x = left
+            frame.origin.y = bottom
+        }
+        
         return frame
     }
     
